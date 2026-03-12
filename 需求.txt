@@ -1,0 +1,37 @@
+获取我的帖子响应: {success: true, data: Array(1), message: '获取用户帖子成功'}
+request.js:16 实际请求URL： /api/user/profile
+EditProfile.vue:451 后端返回的用户数据: {success: true, data: {…}}
+EditProfile.vue:463 表单已从后端最新数据初始化: Proxy(Object) {username: '111', nickname: '测试01', avatar: '/uploads/avatars/3-1773221981148.jpg'}
+EditProfile.vue:160 文件选择事件触发，文件对象: File {name: '4.jpg', lastModified: 1747396308002, lastModifiedDate: Fri May 16 2025 19:51:48 GMT+0800 (China Standard Time), webkitRelativePath: '', size: 219387, …}
+EditProfile.vue:187 已保存File对象到selectedFile: File {name: '4.jpg', lastModified: 1747396308002, lastModifiedDate: Fri May 16 2025 19:51:48 GMT+0800 (China Standard Time), webkitRelativePath: '', size: 219387, …}
+EditProfile.vue:224 ========== 开始上传头像 ==========
+EditProfile.vue:225 selectedFile.value: File {name: '4.jpg', lastModified: 1747396308002, lastModifiedDate: Fri May 16 2025 19:51:48 GMT+0800 (China Standard Time), webkitRelativePath: '', size: 219387, …}
+EditProfile.vue:226 文件详细信息: {name: '4.jpg', type: 'image/jpeg', size: 219387, lastModified: 1747396308002}
+EditProfile.vue:240 FormData avatar字段: File {name: '4.jpg', lastModified: 1747396308002, lastModifiedDate: Fri May 16 2025 19:51:48 GMT+0800 (China Standard Time), webkitRelativePath: '', size: 219387, …}
+EditProfile.vue:241 FormData所有键: ['avatar']
+EditProfile.vue:242 FormData所有值: [File]
+EditProfile.vue:250 准备发送请求到: http://localhost:3000/api/user/avatar (绕过Vite代理)
+EditProfile.vue:267 头像上传响应: {data: {…}, status: 200, statusText: 'OK', headers: AxiosHeaders, config: {…}, …}
+EditProfile.vue:268 头像上传响应类型: object
+EditProfile.vue:269 头像上传响应.data: {success: true, message: '头像上传成功', data: {…}}
+EditProfile.vue:274 解析出的avatarUrl: undefined
+EditProfile.vue:275 avatarUrl类型: undefined
+EditProfile.vue:374 前端发送的保存数据: {nickname: '测试01', avatar: undefined}
+request.js:16 实际请求URL： /api/user/profile
+EditProfile.vue:378 后端返回的响应: {success: true, message: '资料修改成功', data: {…}}
+EditProfile.vue:383 ========== 开始更新全局状态 ==========
+EditProfile.vue:384 当前用户信息: Proxy(Object) {id: 3, username: '111', nickname: '测试01', avatar: '/uploads/avatars/3-1773221981148.jpg', bio: '', …}
+EditProfile.vue:385 表单中的昵称: 测试01
+EditProfile.vue:386 上传的头像URL: undefined
+EditProfile.vue:395 准备更新的用户信息: {id: 3, username: '111', nickname: '测试01', avatar: undefined, bio: '', …}
+EditProfile.vue:397 全局状态已更新: Proxy(Object) {id: 3, username: '111', nickname: '测试01', avatar: undefined, bio: '', …}
+EditProfile.vue:398 localStorage中的userInfo: {id: 3, username: '111', nickname: '测试01', bio: '', role: 'user', …}
+EditProfile.vue:401 开始拉取最新用户数据...
+request.js:16 实际请求URL： /api/user/profile
+EditProfile.vue:451 后端返回的用户数据: {success: true, data: {…}}
+EditProfile.vue:463 表单已从后端最新数据初始化: Proxy(Object) {username: '111', nickname: '测试01', avatar: '/uploads/avatars/3-1773223316254.jpg'}
+EditProfile.vue:403 拉取完成，当前用户信息: Proxy(Object) {id: 3, username: '111', nickname: '测试01', avatar: '/uploads/avatars/3-1773223316254.jpg', bio: '', …}
+App.vue:140 收到用户信息更新事件，刷新用户头像...
+request.js:16 实际请求URL： /api/user/posts
+request.js:16 实际请求URL： /api/user/profile
+Profile.vue:208 获取我的帖子响应: {success: true, data: Array(1), message: '获取用户帖子成功'}
